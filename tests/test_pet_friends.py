@@ -8,7 +8,8 @@ import os
 pf = PetFriends()
 
 
-
+@pytest.mark.auth
+@pytest.mark.api
 def test_get_api_key_for_valid_user(email=valid_email, password=valid_password):
     """ Проверяем что запрос api ключа возвращает статус 200 и в тезультате содержится слово key"""
 
@@ -19,7 +20,8 @@ def test_get_api_key_for_valid_user(email=valid_email, password=valid_password):
     assert status == 200
     assert 'key' in result
 
-
+@pytest.mark.xfail
+@pytest.mark.api
 def test_get_all_pets_with_valid_key(auth_key, filter=''):
     """ Проверяем что запрос всех питомцев возвращает не пустой список.
     Для этого сначала получаем api ключ и сохраняем в переменную auth_key. Далее используя этого ключ
@@ -32,7 +34,7 @@ def test_get_all_pets_with_valid_key(auth_key, filter=''):
     assert status == 200
     assert len(result['pets']) > 0
 
-
+@pytest.mark.skip
 def test_add_new_pet_with_valid_data(auth_key, name='Рудольф', animal_type='кокер спаниэль',
                                      age='13', pet_photo='images/rudik.jpg'):
     """Проверяем что можно добавить питомца с корректными данными"""
@@ -50,7 +52,7 @@ def test_add_new_pet_with_valid_data(auth_key, name='Рудольф', animal_typ
     assert status == 200
     assert result['name'] == name
 
-
+@pytest.mark.api
 def test_successful_delete_self_pet(auth_key):
     """Проверяем возможность удаления питомца"""
 
@@ -74,7 +76,7 @@ def test_successful_delete_self_pet(auth_key):
     assert status == 200
     assert pet_id not in my_pets.values()
 
-
+@pytest.mark.api
 def test_successful_update_self_pet_info(auth_key, name='Мурзик', animal_type='Котэ', age=5):
     """Проверяем возможность обновления информации о питомце"""
 
