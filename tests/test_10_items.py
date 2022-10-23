@@ -7,11 +7,11 @@ from api import ArgumentsException
 
 pf = PetFriends()
 
-def test_add_pet_without_photo(name='Моня', animal_type='кошка', age='4'):
+def test_add_pet_without_photo(auth_key, name='Моня', animal_type='кошка', age='4'):
     """Проверяем что можно добавить питомца с корректными данными без фото"""
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Добавляем питомца без фото
     status, result = pf.add_pet_without_photo(auth_key, name, animal_type, age)
@@ -21,12 +21,12 @@ def test_add_pet_without_photo(name='Моня', animal_type='кошка', age='4
     assert result['name'] == name
     assert result['pet_photo'] == ''
 
-def test_add_photo_to_pet_without_photo(pet_photo='images/rudik.jpg'):
+def test_add_photo_to_pet_without_photo(auth_key,pet_photo='images/rudik.jpg'):
     """Проверяем что можно добавить фото питомцу у которого не было фото"""
 
     # Создание питомца без фото
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
     status, result = pf.add_pet_without_photo(auth_key, 'Roodolf', 'dog', '10')
 
     # Добавление фотографии питомцу
@@ -34,7 +34,7 @@ def test_add_photo_to_pet_without_photo(pet_photo='images/rudik.jpg'):
     assert status == 200
     assert "pet_photo" in result
 
-def test_add_new_pet_with_age_bigger_then_max(name='Рудольф', animal_type='кокер-спаниэль',
+def test_add_new_pet_with_age_bigger_then_max(auth_key, name='Рудольф', animal_type='кокер-спаниэль',
                                      age='130', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца с возрастом меньше больше 100 лет"""
 
@@ -42,13 +42,13 @@ def test_add_new_pet_with_age_bigger_then_max(name='Рудольф', animal_type
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе возраста больше 100
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_age_less_then_min(name='Рудольф', animal_type='кокер-спаниэль',
+def test_add_new_pet_with_age_less_then_min(auth_key, name='Рудольф', animal_type='кокер-спаниэль',
                                      age='-20', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца с возрастом меньше меньше 0 лет"""
 
@@ -56,13 +56,13 @@ def test_add_new_pet_with_age_less_then_min(name='Рудольф', animal_type='
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе возраста меньше 0
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_no_age(name='Рудольф', animal_type='кокер-спаниэль',
+def test_add_new_pet_with_no_age(auth_key, name='Рудольф', animal_type='кокер-спаниэль',
                                      age='', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца без указания возраста"""
 
@@ -70,13 +70,13 @@ def test_add_new_pet_with_no_age(name='Рудольф', animal_type='кокер-
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при осутствии ввода возраста
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_no_animal_type(name='Рудольф', animal_type='',
+def test_add_new_pet_with_no_animal_type(auth_key, name='Рудольф', animal_type='',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца без указания породы"""
 
@@ -84,13 +84,13 @@ def test_add_new_pet_with_no_animal_type(name='Рудольф', animal_type='',
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе пустого типа животного
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_no_name(name='', animal_type='dog',
+def test_add_new_pet_with_no_name(auth_key, name='', animal_type='dog',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца без указания имени"""
 
@@ -98,13 +98,13 @@ def test_add_new_pet_with_no_name(name='', animal_type='dog',
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе пустого имени
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_spec_symbols_in_name(name='[!Woolf', animal_type='cat',
+def test_add_new_pet_with_spec_symbols_in_name(auth_key, name='[!Woolf', animal_type='cat',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца который содержит спецсимволы в имени"""
 
@@ -112,13 +112,13 @@ def test_add_new_pet_with_spec_symbols_in_name(name='[!Woolf', animal_type='cat'
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе имени, содержащего спецсимволы
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_spec_symbols_in_animal_type(name='Woolf', animal_type='[(@ds!',
+def test_add_new_pet_with_spec_symbols_in_animal_type(auth_key, name='Woolf', animal_type='[(@ds!',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца который содержит спецсимволы в породе"""
 
@@ -126,13 +126,13 @@ def test_add_new_pet_with_spec_symbols_in_animal_type(name='Woolf', animal_type=
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе породы, содержащей спецсимволы
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_space_at_beggining_of_name(name=' Woolf', animal_type='dog',
+def test_add_new_pet_with_space_at_beggining_of_name(auth_key, name=' Woolf', animal_type='dog',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца c пробелом в начале имени"""
 
@@ -140,13 +140,13 @@ def test_add_new_pet_with_space_at_beggining_of_name(name=' Woolf', animal_type=
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе пробела в начале имени
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 
-def test_add_new_pet_with_space_at_beggining_of_animal_type(name='Woolf', animal_type=' dog',
+def test_add_new_pet_with_space_at_beggining_of_animal_type(auth_key, name='Woolf', animal_type=' dog',
                                      age='10', pet_photo='images/rudik.jpg'):
     """Проверяем что нельзя добавить питомца c пробелом в начале имени"""
 
@@ -154,7 +154,7 @@ def test_add_new_pet_with_space_at_beggining_of_animal_type(name='Woolf', animal
     pet_photo = os.path.join(os.path.dirname(__file__), pet_photo)
 
     # Запрашиваем ключ api и сохраняем в переменую auth_key
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
+    # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе пробела в начале имени
     with pytest.raises(ArgumentsException):

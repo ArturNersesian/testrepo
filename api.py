@@ -194,30 +194,30 @@ class PetFriends:
 
         return status, result
 
-pf = PetFriends()
-status, key = pf.get_api_key(valid_email, valid_password)
-print(status)
-print(key)
-# key['key'] = ''
-print("********************************************************")
-pet_photo = 'tests/images/cat1.jpg'
-status, result = pf.add_new_pet(key, 'Artur', 'кот', '5', pet_photo)
-print(status)
-print(result)
-print("********************************************************")
-status, result = pf.add_pet_without_photo(key, 'Avanes', 'human', '38')
-print(status)
-print(result)
-print(f"ID элемента без фото {result['id']}")
-print("********************************************************")
-id = result['id']
-print(type(id))
-photo = 'tests/images/rudik.jpg'
-status, result = pf.add_photo_to_pet_without_photo(key, id,photo)
-print(status)
-print(result)
-print(f"ID элемента, которому добавили фото {result['id']}")
-print("********************************************************")
-# status, result = pf.delete_pet(key, id)
+# pf = PetFriends()
+# status, key = pf.get_api_key(valid_email, valid_password)
+# print(status)
+# print(key)
+# # key['key'] = ''
+# print("********************************************************")
+# pet_photo = 'tests/images/cat1.jpg'
+# status, result = pf.add_new_pet(key, 'Artur', 'кот', '5', pet_photo)
 # print(status)
 # print(result)
+# print("********************************************************")
+# status, result = pf.add_pet_without_photo(key, 'Avanes', 'human', '38')
+# print(status)
+# print(result)
+# print(f"ID элемента без фото {result['id']}")
+# print("********************************************************")
+# id = result['id']
+# print(type(id))
+# photo = 'tests/images/rudik.jpg'
+# status, result = pf.add_photo_to_pet_without_photo(key, id,photo)
+# print(status)
+# print(result)
+# print(f"ID элемента, которому добавили фото {result['id']}")
+# print("********************************************************")
+# # status, result = pf.delete_pet(key, id)
+# # print(status)
+# # print(result)
