@@ -1,0 +1,15 @@
+Вызываем get_api_key(<api.PetFriends object at 0x0000014A62819B50>, 'artur.nersesian2016@yandex.ru', '123456')
+сигнатура функции: <api.PetFriends object at 0x0000014A62819B50>, 'artur.nersesian2016@yandex.ru', '123456'
+аргументы: ['<api.PetFriends object at 0x0000014A62819B50>', "'artur.nersesian2016@yandex.ru'", "'123456'"]
+Вызываем get_list_of_pets(<api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '')
+сигнатура функции: <api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, ''
+аргументы: ['<api.PetFriends object at 0x0000014A62819B50>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "''"]
+Вызываем add_new_pet(<api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер спаниэль', '13', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер спаниэль', '13', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000014A62819B50>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "'кокер спаниэль'", "'13'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+Вызываем get_list_of_pets(<api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets')
+сигнатура функции: <api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets'
+аргументы: ['<api.PetFriends object at 0x0000014A62819B50>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'my_pets'"]
+Вызываем get_list_of_pets(<api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets')
+сигнатура функции: <api.PetFriends object at 0x0000014A62819B50>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets'
+аргументы: ['<api.PetFriends object at 0x0000014A62819B50>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'my_pets'"]

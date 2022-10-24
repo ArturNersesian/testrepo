@@ -1,0 +1,151 @@
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4', 'Content-Type': 'multipart/form-data; boundary=eecc258718d5475c869394317be9b09c'})
+data: <MultipartEncoder: {'name': 'Моня', 'animal_type': 'кошка', 'age': '4'}>)
+URL: https://petfriends.skillfactory.ru/api/create_pet_simple
+Информация по вызываемой функции api запроса: 
+Название функции: add_pet_without_photo(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Моня', 'кошка', '4')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Моня', 'кошка', '4'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Моня'", "'кошка'", "'4'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4', 'Content-Type': 'multipart/form-data; boundary=1bf68acabf694b4fbd814bc93bad00b0'})
+data: <MultipartEncoder: {'name': 'Roodolf', 'animal_type': 'dog', 'age': '10'}>)
+URL: https://petfriends.skillfactory.ru/api/create_pet_simple
+Информация по вызываемой функции api запроса: 
+Название функции: add_pet_without_photo(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Roodolf', 'dog', '10')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Roodolf', 'dog', '10'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Roodolf'", "'dog'", "'10'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4', 'Content-Type': 'multipart/form-data; boundary=ce7b1c591d874c1f98d9a9d4b2010247'})
+URL: https://petfriends.skillfactory.ru/api/pets/set_photo/
+data: <MultipartEncoder: {'pet_photo': ('C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg', <_io.BufferedReader name='C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'>, 'image/jpeg')}>)
+Информация по вызываемой функции api запроса: 
+Название функции: add_photo_to_pet_without_photo(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '9e809499-1911-47b7-b299-b666aaee55c1', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '9e809499-1911-47b7-b299-b666aaee55c1', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'9e809499-1911-47b7-b299-b666aaee55c1'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+***************************************************** 
+возраст питомца может быть в диапазоне от 0 до 100 лет
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '130', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '130', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "'кокер-спаниэль'", "'130'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+возраст питомца может быть в диапазоне от 0 до 100 лет
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '-20', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '-20', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "'кокер-спаниэль'", "'-20'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+возраст не может быть пустым
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер-спаниэль', '', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "'кокер-спаниэль'", "''", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+порода не может быть пустой
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', '', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', '', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "''", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+имя не может быть пустым
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '', 'dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '', 'dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "''", "'dog'", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+имя не может содержать спецсимволы
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '[!Woolf', 'cat', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '[!Woolf', 'cat', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'[!Woolf'", "'cat'", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+вид животного не может содержать спецсимволы
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Woolf', '[(@ds!', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Woolf', '[(@ds!', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Woolf'", "'[(@ds!'", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+имя животного не может начинаться с пробела
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, ' Woolf', 'dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, ' Woolf', 'dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "' Woolf'", "'dog'", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+вид животного не может начинаться с пробела
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Woolf', ' dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F5C4520>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Woolf', ' dog', '10', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F5C4520>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Woolf'", "' dog'", "'10'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+headers: {'email': 'artur.nersesian2016@yandex.ru', 'password': '123456'})
+URL: https://petfriends.skillfactory.ru/api/key
+Информация по вызываемой функции api запроса: 
+Название функции: get_api_key(<api.PetFriends object at 0x0000022E3F607760>, 'artur.nersesian2016@yandex.ru', '123456')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, 'artur.nersesian2016@yandex.ru', '123456'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "'artur.nersesian2016@yandex.ru'", "'123456'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+params: {'filter': ''})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: get_list_of_pets(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, ''
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "''"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4', 'Content-Type': 'multipart/form-data; boundary=171852f5df714928828d12796fb85e5f'})
+data: <MultipartEncoder: {'name': 'Рудольф', 'animal_type': 'кокер спаниэль', 'age': '13', 'pet_photo': ('C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg', <_io.BufferedReader name='C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'>, 'image/jpeg')}>)
+URL: https://petfriends.skillfactory.ru/api/pets
+Информация по вызываемой функции api запроса: 
+Название функции: add_new_pet(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер спаниэль', '13', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'Рудольф', 'кокер спаниэль', '13', 'C:\\Users\\Artur\\PycharmProjects\\PetFriendsTesting\\tests\\images/rudik.jpg'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'Рудольф'", "'кокер спаниэль'", "'13'", "'C:\\\\Users\\\\Artur\\\\PycharmProjects\\\\PetFriendsTesting\\\\tests\\\\images/rudik.jpg'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+params: {'filter': 'my_pets'})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: get_list_of_pets(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'my_pets'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: delete_pet(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '3cf6979b-85e2-4e78-905b-11428357bf49')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '3cf6979b-85e2-4e78-905b-11428357bf49'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'3cf6979b-85e2-4e78-905b-11428357bf49'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+params: {'filter': 'my_pets'})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: get_list_of_pets(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'my_pets'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+params: {'filter': 'my_pets'})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: get_list_of_pets(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets')
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, 'my_pets'
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'my_pets'"]
+***************************************************** 
+***************************************************** 
+headers: {'auth_key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'})
+data: {'name': 'Мурзик', 'age': 5, 'animal_type': 'Котэ'})
+URL: https://petfriends.skillfactory.ru/api/pets/
+Информация по вызываемой функции api запроса: 
+Название функции: update_pet_info(<api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '9e809499-1911-47b7-b299-b666aaee55c1', 'Мурзик', 'Котэ', 5)
+сигнатура функции: <api.PetFriends object at 0x0000022E3F607760>, {'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}, '9e809499-1911-47b7-b299-b666aaee55c1', 'Мурзик', 'Котэ', 5
+аргументы: ['<api.PetFriends object at 0x0000022E3F607760>', "{'key': '30635624372e48ca2a7d9755258d8ce8d600d6116b546564351233f4'}", "'9e809499-1911-47b7-b299-b666aaee55c1'", "'Мурзик'", "'Котэ'", '5']
+***************************************************** 
+***************************************************** 

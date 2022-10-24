@@ -4,9 +4,9 @@ import requests
 from api import PetFriends
 from settings import valid_email, valid_password
 import os
+import functools
 
 pf = PetFriends()
-
 
 @pytest.mark.auth
 @pytest.mark.api
@@ -34,7 +34,7 @@ def test_get_all_pets_with_valid_key(auth_key, filter=''):
     assert status == 200
     assert len(result['pets']) > 0
 
-@pytest.mark.skip
+@pytest.mark.api
 def test_add_new_pet_with_valid_data(auth_key, name='Рудольф', animal_type='кокер спаниэль',
                                      age='13', pet_photo='images/rudik.jpg'):
     """Проверяем что можно добавить питомца с корректными данными"""

@@ -1,5 +1,5 @@
 import pytest
-
+import requests
 from api import PetFriends
 from settings import valid_email, valid_password
 import os
@@ -157,6 +157,9 @@ def test_add_new_pet_with_space_at_beggining_of_animal_type(auth_key, name='Wool
     # _, auth_key = pf.get_api_key(valid_email, valid_password)
 
     # Проверяем, что срабатывает исключение при вводе пробела в начале имени
+
+
+
     with pytest.raises(ArgumentsException):
         pf.add_new_pet(auth_key, name, animal_type, age, pet_photo)
 

@@ -4,7 +4,7 @@ from settings import valid_email, valid_password
 
 @pytest.fixture(scope="session", autouse=True)
 def auth_key(email=valid_email, passwd=valid_password):
-    """Фикстура делает запрос к API сервера и возвращает статус запроса и результат в формате
+    """Фикстура делает запрос к API сервера и возвращает результат в формате
             JSON с уникальным ключем пользователя, найденного по указанным email и паролем"""
     base_url = "https://petfriends.skillfactory.ru/"
     headers = {
